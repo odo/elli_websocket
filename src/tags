@@ -1,0 +1,73 @@
+IS_TOKEN_SEP	elli_ws_http.erl	/^-define(IS_TOKEN_SEP(C), (C =:= $, orelse C =:= $\\/
+IS_WS	elli_bstr.erl	/^-define(IS_WS(C), (C =:= $\\s orelse C=:=$\\t orelse/
+ascii_to_lower_test	elli_bstr.erl	/^ascii_to_lower_test() ->$/
+case_insensitive_equal_test	elli_bstr.erl	/^case_insensitive_equal_test() ->$/
+ensure_response	elli_ws_request_adapter.erl	/^ensure_response(ReqAdapter, 400) ->$/
+equal_ci	elli_bstr.erl	/^equal_ci(<<>>, <<>>) ->$/
+get	elli_ws_request_adapter.erl	/^get(socket, ReqAdapter) ->$/
+get_all_values_ci	elli_proplists.erl	/^get_all_values_ci(Key, Proplist) ->$/
+get_all_values_ci1	elli_proplists.erl	/^get_all_values_ci1(_Key, [], Acc) ->$/
+get_header_value	elli_ws_request_adapter.erl	/^get_header_value(Key, #req{headers=Headers}) ->$/
+get_header_values	elli_ws_request_adapter.erl	/^get_header_values(Key, #req{headers=Headers}) ->$/
+get_value_ci	elli_proplists.erl	/^get_value_ci(_Key, []) ->$/
+handle	elli_example_websocket.erl	/^handle(Req, Args) ->$/
+handle	elli_example_websocket.erl	/^handle('websocket', [<<"my">>, <<"websocket">>], R/
+handle_event	elli_example_websocket.erl	/^handle_event(Name, EventArgs, ElliArgs) ->$/
+handle_event	elli_ws_protocol.erl	/^handle_event(Req, Handler, Name, EventArgs, Opts) /
+handler_before_loop	elli_ws_protocol.erl	/^handler_before_loop(State=#state{socket=Socket, hi/
+handler_call	elli_ws_protocol.erl	/^handler_call(State=#state{handler=Handler}, Req, H/
+handler_init	elli_ws_protocol.erl	/^handler_init(State=#state{env=Env, handler=Handler/
+handler_loop	elli_ws_protocol.erl	/^handler_loop(State=#state{socket={_,Port}, message/
+handler_loop_timeout	elli_ws_protocol.erl	/^handler_loop_timeout(State=#state{timeout=infinity/
+handler_terminate	elli_ws_protocol.erl	/^handler_terminate(#state{env=Env, handler=Handler}/
+header	elli_ws_request_adapter.erl	/^header(<<"sec-websocket-version">>, #req_adapter{r/
+init	elli_example_websocket.erl	/^init(Req, Args) ->$/
+init	elli_ws_request_adapter.erl	/^init(Req, RespCompress) ->$/
+init_ws	elli_example_websocket.erl	/^init_ws([<<"my">>, <<"websocket">>], _Req, _Args) /
+is_equal_ci	elli_bstr.erl	/^is_equal_ci(Bin, Bin) ->$/
+is_utf8	elli_ws_protocol.erl	/^is_utf8(Valid = <<>>) ->$/
+lchr	elli_bstr.erl	/^lchr($A) -> $a;$/
+maybe_reply	elli_ws_request_adapter.erl	/^maybe_reply(400, ReqAdapter) ->$/
+messages	elli_ws_request_adapter.erl	/^messages(#req_adapter{req=Req}) ->$/
+parse	elli_ws_http.erl	/^parse(<<>>, Acc, <<>>) ->$/
+parse_before	elli_ws_http.erl	/^parse_before(<<>>, Acc) ->$/
+parse_header	elli_ws_request_adapter.erl	/^parse_header(<<"upgrade">>, #req_adapter{req=Req}=/
+payload_length_to_binary	elli_ws_protocol.erl	/^payload_length_to_binary(N) ->$/
+reply	elli_ws_request_adapter.erl	/^reply(400, #req_adapter{req=Req}) ->$/
+req_adapter	elli_ws_request_adapter.erl	/^-record(req_adapter, {$/
+rotate_mask_key	elli_ws_protocol.erl	/^rotate_mask_key(MaskKey, UnmaskedLen) ->$/
+set_meta	elli_ws_request_adapter.erl	/^set_meta(websocket_version, Version, ReqAdapter) -/
+socket_messages	elli_ws_request_adapter.erl	/^socket_messages({plain, _}) ->$/
+start	ws_test.erl	/^start() ->$/
+state	elli_ws_protocol.erl	/^-record(state, {$/
+to_lower	elli_bstr.erl	/^to_lower(Bin) ->$/
+tokens	elli_ws_http.erl	/^tokens(L) when is_list(L) ->$/
+tokens_test	elli_ws_http.erl	/^tokens_test() ->$/
+trim	elli_bstr.erl	/^trim(Bin) ->$/
+trim_left	elli_bstr.erl	/^trim_left(<<C, Rest\/binary>>) when ?IS_WS(C) -> $/
+trim_right	elli_bstr.erl	/^trim_right(<<>>) -> <<>>;$/
+trim_test	elli_bstr.erl	/^trim_test() ->$/
+upgrade	elli_websocket.erl	/^upgrade(Req, Args) ->$/
+upgrade	elli_ws_protocol.erl	/^upgrade(Req, Env, Handler, HandlerOpts) ->$/
+upgrade_reply	elli_ws_request_adapter.erl	/^upgrade_reply(101, Headers, #req_adapter{req=Req}=/
+websocket_close	elli_ws_protocol.erl	/^websocket_close(State=#state{socket=Socket},$/
+websocket_data	elli_ws_protocol.erl	/^websocket_data(State, Req, HandlerState, << _:1, R/
+websocket_deflate_frame	elli_ws_protocol.erl	/^websocket_deflate_frame(Opcode, Payload,$/
+websocket_dispatch	elli_ws_protocol.erl	/^websocket_dispatch(State=#state{frag_state={nofin,/
+websocket_extensions	elli_ws_protocol.erl	/^websocket_extensions(State, Req) ->$/
+websocket_handle	elli_example_websocket.erl	/^websocket_handle(Req, Message, State) ->$/
+websocket_handle_event	elli_example_websocket.erl	/^websocket_handle_event(websocket_open, [_, _Versio/
+websocket_handler_callback	elli_ws_request_adapter.erl	/^websocket_handler_callback(#req_adapter{req=Req}=R/
+websocket_handler_handle_event	elli_ws_request_adapter.erl	/^websocket_handler_handle_event(#req_adapter{req=Re/
+websocket_handler_init	elli_ws_request_adapter.erl	/^websocket_handler_init(#req_adapter{req=Req}=RA, H/
+websocket_handshake	elli_ws_protocol.erl	/^websocket_handshake(State=#state{key=Key, deflate_/
+websocket_inflate_frame	elli_ws_protocol.erl	/^websocket_inflate_frame(Data, << Rsv1:1, _:2 >>, _/
+websocket_info	elli_example_websocket.erl	/^websocket_info(Req, Message, State) ->$/
+websocket_init	elli_example_websocket.erl	/^websocket_init(Req, Opts) ->$/
+websocket_opcode	elli_ws_protocol.erl	/^websocket_opcode(text) -> 1;$/
+websocket_payload	elli_ws_protocol.erl	/^websocket_payload(State, Req, HandlerState,$/
+websocket_payload_loop	elli_ws_protocol.erl	/^websocket_payload_loop(State=#state{socket={_,Port/
+websocket_send	elli_ws_protocol.erl	/^websocket_send(Type, State=#state{socket=Socket})$/
+websocket_send_many	elli_ws_protocol.erl	/^websocket_send_many([], State) ->$/
+websocket_unmask	elli_ws_protocol.erl	/^websocket_unmask(<<>>, _, Unmasked) ->$/
+websocket_upgrade	elli_ws_protocol.erl	/^websocket_upgrade(State, Req) ->$/
